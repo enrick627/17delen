@@ -25,8 +25,10 @@ namespace _17delen
         {
             //Declaraties
             uint deeltal, deler;
-            double antwoord;
+            double quotient;
+            string antwoord;
             bool vraagdeeltal, vraagdeler;
+            bool isdeeltalok, isdelerok;
 
             //input
             // Vraag het deeltal aan de gebruiker
@@ -38,14 +40,15 @@ namespace _17delen
 
             //processing
             // Doe de deling tussen de 2 getallen
-            if (vraagdeeltal && vraagdeler)
+            if (isdeeltalok && isdelerok)
             {
-                antwoord = (deeltal) / (deler);
+                quotient = deeltal/deler
             }
 
             // output
             //Toon de het eindegetal na de deling
-            Console.WriteLine(antwoord);
+            
+            antwoord = 
 
             //wachten.....
             Console.WriteLine();
