@@ -24,21 +24,24 @@ namespace _17delen
         static void Main(string[] args)
         {
             //Declaraties
-            byte deeltal, deler;
-            string antwoord;
-            bool vraagdeeltal, vraaggetal;
+            uint deeltal, deler;
+            double antwoord;
+            bool vraagdeeltal, vraagdeler;
 
             //input
             // Vraag het deeltal aan de gebruiker
             Console.WriteLine("wat is uw deeltal?: ");
-            vraagdeeltal = byte.TryParse(Console.ReadLine(), out deeltal);
+            vraagdeeltal = uint.TryParse(Console.ReadLine(), out deeltal);
             // Vraag het getal dat je wil laten delen door het deeltal
             Console.WriteLine("wat is uw getal?: ");
-            vraaggetal = byte.TryParse(Console.ReadLine(), out deler);
+            vraagdeler = uint.TryParse(Console.ReadLine(), out deler);
 
             //processing
             // Doe de deling tussen de 2 getallen
-            antwoord = 
+            if (vraagdeeltal && vraagdeler)
+            {
+                antwoord = (deeltal) / (deler);
+            }
 
             // output
             //Toon de het eindegetal na de deling
